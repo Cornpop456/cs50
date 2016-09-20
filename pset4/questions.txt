@@ -1,0 +1,23 @@
+0.  Bmp - from 2 colors up to 16 millions  , Gif - 256,  JPEG - 16 millions, PNG - 16 millions + transparency
+1.  Gif
+2.  The difference is in amount of data which remains after compression. 
+3.  JPEG
+4.  An operating system delete the reference of the file, but the file still can be recovered
+5.  Overwrite data, degauss hard drive or phisically destroy it.
+6.  This header defines a set of integral type aliases with specific width requirements, 
+    along with macros specifying their limits and macro functions to create values of these types.
+7.  The point is to be sure that we work with the exact file format
+8.  1, 4, 4, 2
+9.  1st is hexadecimal second is decimal
+10. biSize means the number of bytes required by the structure and bfSize means the size, in bytes, of the bitmap file
+11. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner
+12. biClrUsed
+13. The file exists, but you don't have permissions, The file is opened in a mode that doesn't allow other accesses
+14. Because it specifies how many elements you want to read, and we're always
+    reading a struct so we only need 1 struct.
+15. 3
+16. It moves to a specific location in a file.
+17. An integer constant which, when used as the 'whence' argument to the
+    fseek or fseeko function, specifies that the offset provided is relative to
+    the current file position.
+18. Bobby Cotick

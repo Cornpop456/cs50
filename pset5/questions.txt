@@ -1,0 +1,13 @@
+0.  a lung disease that is otherwise known as silicosis. It is the longest word in the English language published in a dictionary, the Oxford English Dictionary.
+1.  returns resource usage measures
+2.  16
+3.  The getrusage function prototype expects a pointer
+4.  For loop goes through each character from the input text file and check it for the EOF which means the end of the word and ignore 
+    non alphabetical symbols like numbers, 
+    than it puts a null terminator to the word and continue reading characters untill it read them all.
+5.  We neen to check each letter to find the end of the words and find numbers or EOF symbols and fscanf won't do it as fgetc 
+6.  Pointer to a constant character. You cannot use this pointer to change the value being pointed to
+7.  I uses hash table size of 26 (from 0 to 25) for each letter and for each index it has singly-linked list in which were all words starting from same character.
+8.  When it at last works, i couldn't make it mush more faster so medium time is 0.50 - 0.60.
+9.  The main problem was checking and i couldn't make it much faster, maybe i should use recursion or something but i did with ordinary loops and a bit time it was to make world be lowercase.
+10. Yes, i think that there are some issues with checking as other operations completed quite fast and i am not sure about doing a copy of word in case i can't change the const string to lowercase.
