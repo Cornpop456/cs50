@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotation page
+{% endblock %}
+
+
+{% block main %}
+    <form action="{{ url_for('quote') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <h4>Enter a stock's symbol to see current price</h4>
+                <input autocomplete="off" required  autofocus placeholder="Symbol" class="form-control" name="stock_symbol"  type="text"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Quote</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

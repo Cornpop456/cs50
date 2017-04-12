@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main page
+{% endblock %}
+
+{% block main %}
+  <table class="table table-striped my-table">
+      <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for line in data %}
+              <tr>
+                  <td>{{ line.symbol }}</td>
+                  <td>{{ line.name_of_symbol.name }}</td>
+                  <td>{{ line.shares_sum }}</td>
+                  <td>{{ line.price_of_stock }}</td>
+                  <td>{{ line.total}}</td>
+              </tr>
+          {% endfor %}
+          <tr>
+            <td>CASH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{cash}}</td>
+          </tr>
+      </tbody>
+  </table>
+{% endblock %}

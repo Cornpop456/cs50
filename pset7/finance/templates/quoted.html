@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock's current price
+{% endblock %}
+
+
+{% block main %}
+<ul class="symbol_results">
+    <li>{{ lookup_response.name }}</li>
+    <li>{{ lookup_response.price }}</li>
+    <li>{{ lookup_response.symbol }}</li>
+</ul>
+{% endblock %}
